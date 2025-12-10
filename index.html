@@ -259,11 +259,7 @@
         您的浏览器不支持音频播放。
     </audio>
 
-    <div id="ui-layer">
-        <!-- 左上角：给晶晶的标签 -->
-        <div id="dedication-to-jingjing">
-            <div id="dedication-text"></div>
-        </div>
+
         
         <h1>Merry Christmas</h1>
 
@@ -563,7 +559,7 @@
             ctx.fillStyle = '#d4af37';
             ctx.font = 'bold 40px Arial';
             ctx.textAlign = 'center';
-            ctx.fillText('💖 晶晶 💖', 256, 350);
+            ctx.fillText('💖  💖', 256, 350);
             ctx.font = 'italic 30px Arial';
             ctx.fillText('圣诞快乐', 256, 400);
             
@@ -663,7 +659,7 @@
                 animation: gentleFloat 2s ease-in-out infinite;
             `;
             hint.innerHTML = `
-                <h3 style="margin: 0 0 10px 0;">🎵 给晶晶的特别音乐</h3>
+                <h3 style="margin: 0 0 10px 0;">🎵 特别音乐</h3>
                 <p style="margin: 0; font-size: 12px; color: #eebb66;">点击屏幕开始播放</p>
                 <div style="margin-top: 15px; font-size: 10px; color: #aaa;">💝 圣诞快乐 💝</div>
             `;
@@ -699,7 +695,7 @@
 
         // --- 左上角标签的特殊效果 ---
         function startHeartParticleEffect() {
-            const dedicationElement = document.getElementById('dedication-to-jingjing');
+            const dedicationElement = document.getElementById('dedication-to-');
             
             heartAnimationTimer = setInterval(() => {
                 createHeartParticle(dedicationElement);
